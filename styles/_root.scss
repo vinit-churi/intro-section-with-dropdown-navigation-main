@@ -1,0 +1,27 @@
+:root {
+  //breakpoints
+  --Mobile: 480px;
+  --tablet: 768px;
+  --Desktop: 1024px;
+
+  // colors
+  --body-color: hsl(0, 0%, 98%);
+  --paragraph-color: hsl(0, 0%, 41%);
+  --links-color: hsl(0, 0%, 41%);
+  --link-hover-color: hsl(0, 0%, 8%);
+  --button-color: hsl(0, 0%, 8%);
+  --button-font-color: hsl(0, 0%, 98%);
+
+  // Typography
+  --font-size-paragraph: 18px;
+  --font-family: "Epilogue", sans-serif;
+  --font-weight-one-500: 500;
+  --font-weight-two-700: 700;
+}
+
+body {
+  font-family: var(--font-family);
+  p {
+    font-size: var(--font-size-paragraph);
+  }
+}

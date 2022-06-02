@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- javascript -->
+    <script src="./main.js" defer></script>
+    <title>50days50project</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="snap logo" />
+        </div>
+        <div class="mobile-nav">
+          <img src="./images/icon-menu.svg" alt="open" class="hamburger" />
+          <img
+            src="./images/icon-close-menu.svg"
+            alt="close"
+            class="hamburger hide"
+          />
+        </div>
+        <div class="desktop-nav hide">
+          <ul class="menu-links">
+            <li class="menu-item dropdown">
+              Features
+              <div class="menu-item-subMenu features hide mobile">
+                <ul>
+                  <li>
+                    <img src="./images/icon-todo.svg" alt="todo" />
+                    <p>Todo List</p>
+                  </li>
+                  <li>
+                    <img src="./images/icon-calendar.svg" alt="calendar" />
+                    <p>Calendar</p>
+                  </li>
+                  <li>
+                    <img src="./images/icon-reminders.svg" alt="reminder" />
+                    <p>Reminder</p>
+                  </li>
+                  <li>
+                    <img src="./images/icon-planning.svg" alt="planning" />
+                    <p>Planning</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item dropdown">
+              Company
+              <div class="menu-item-subMenu company hide mobile">
+                <ul>
+                  <li>History</li>
+                  <li>Our Team</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item"><a href="#">Careers</a></li>
+            <li class="menu-item"><a href="#">About</a></li>
+          </ul>
+          <div class="menu-actions">
+            <button class="button login">Login</button>
+            <button class="button register">register</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main-content container">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="button learn">Learn more</button>
+        <div class="customer-logos">
+          <div>
+            <img src="./images/client-databiz.svg" alt="databiz" />
+          </div>
+          <div>
+            <img src="./images/client-audiophile.svg" alt="audiophile" />
+          </div>
+          <div>
+            <img src="./images/client-meet.svg" alt="meet" />
+          </div>
+          <div>
+            <img src="./images/client-maker.svg" alt="maker" />
+          </div>
+        </div>
+      </div>
+      <div class="main-image">
+        <img class="hide" src="./images/image-hero-desktop.png" alt="" />
+        <img src="./images/image-hero-mobile.png" alt="" />
+      </div>
+    </main>
+  </body>
+</html>
