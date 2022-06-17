@@ -21,7 +21,14 @@
 
 body {
   font-family: var(--font-family);
+  // overflow-x: hidden;
   p {
     font-size: var(--font-size-paragraph);
   }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
