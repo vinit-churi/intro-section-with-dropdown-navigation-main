@@ -18,14 +18,18 @@
     <title>50days50project</title>
   </head>
   <body>
+    <div data-dark-overlay class=""></div>
     <header>
       <nav class="container">
         <div class="logo">
           <img src="./images/logo.svg" alt="snap logo" />
         </div>
-        <div class="mobile-nav">
-          <img src="./images/icon-menu.svg" alt="open" class="hamburger" />
-          <div class="dark-overlay"></div>
+        <img
+          src="./images/icon-menu.svg"
+          alt="open"
+          class="hamburger hamburger-open"
+        />
+        <div class="mobile-nav hide">
           <div class="mobile-menu-links">
             <img
               src="./images/icon-close-menu.svg"
@@ -88,43 +92,60 @@
             </div>
           </div>
         </div>
-        <div class="desktop-nav hide">
+        <div class="desktop-nav">
           <ul class="menu-links">
             <li class="menu-item dropdown">
-              Features
-              <div class="menu-item-subMenu features hide mobile">
-                <ul>
-                  <li>
-                    <img src="./images/icon-todo.svg" alt="todo" />
-                    <p>Todo List</p>
-                  </li>
-                  <li>
-                    <img src="./images/icon-calendar.svg" alt="calendar" />
-                    <p>Calendar</p>
-                  </li>
-                  <li>
-                    <img src="./images/icon-reminders.svg" alt="reminder" />
-                    <p>Reminder</p>
-                  </li>
-                  <li>
-                    <img src="./images/icon-planning.svg" alt="planning" />
-                    <p>Planning</p>
-                  </li>
-                </ul>
+              <div data-desktop-feature-menu-button class="menu-item-title">
+                <p><a href="#">Features</a></p>
+                <img src="./images/icon-arrow-down.svg" alt="" />
               </div>
+              <ul
+                class="menu-item-subMenu features menu-item-subMenu-feature hide"
+              >
+                <li>
+                  <img src="./images/icon-todo.svg" alt="todo" />
+                  <p><a href="#">Todo List</a></p>
+                </li>
+                <li>
+                  <img src="./images/icon-calendar.svg" alt="calendar" />
+                  <p><a href="#">Calendar</a></p>
+                </li>
+                <li>
+                  <img src="./images/icon-reminders.svg" alt="reminder" />
+                  <p><a href="#">Reminder</a></p>
+                </li>
+                <li>
+                  <img src="./images/icon-planning.svg" alt="planning" />
+                  <p><a href="#">Planning</a></p>
+                </li>
+              </ul>
             </li>
             <li class="menu-item dropdown">
-              Company
-              <div class="menu-item-subMenu company hide mobile">
-                <ul>
-                  <li>History</li>
-                  <li>Our Team</li>
-                  <li>Blog</li>
-                </ul>
+              <div data-desktop-company-menu-button class="menu-item-title">
+                <p><a href="#">Company</a></p>
+                <img src="./images/icon-arrow-down.svg" alt="" />
               </div>
+
+              <ul
+                class="menu-item-subMenu company menu-item-subMenu-company hide"
+              >
+                <li>
+                  <p><a href="#">History</a></p>
+                </li>
+                <li>
+                  <p><a href="#">Our Team</a></p>
+                </li>
+                <li>
+                  <p><a href="#">Blog</a></p>
+                </li>
+              </ul>
             </li>
-            <li class="menu-item"><a href="#">Careers</a></li>
-            <li class="menu-item"><a href="#">About</a></li>
+            <li class="menu-item">
+              <p><a href="#">Careers</a></p>
+            </li>
+            <li class="menu-item">
+              <p><a href="#">About</a></p>
+            </li>
           </ul>
           <div class="menu-actions">
             <button class="button login">Login</button>
@@ -157,8 +178,12 @@
         </div>
       </div>
       <div class="main-image">
-        <img class="hide" src="./images/image-hero-desktop.png" alt="" />
-        <img src="./images/image-hero-mobile.png" alt="" />
+        <img
+          class="desktop-image"
+          src="./images/image-hero-desktop.png"
+          alt=""
+        />
+        <img class="mobile-image" src="./images/image-hero-mobile.png" alt="" />
       </div>
     </main>
   </body>
